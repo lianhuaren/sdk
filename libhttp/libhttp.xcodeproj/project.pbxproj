@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4643D908244C497A00572339 /* http-transport-pool.c in Sources */ = {isa = PBXBuildFile; fileRef = 4643D907244C497A00572339 /* http-transport-pool.c */; };
-		46A0D5052297930D0070E1F5 /* http-header-auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 46A0D5042297930D0070E1F5 /* http-header-auth.c */; };
 		46C5B15D2182E16E00419E57 /* http-client.c in Sources */ = {isa = PBXBuildFile; fileRef = 46C5B1472182E16E00419E57 /* http-client.c */; };
 		46C5B15E2182E16E00419E57 /* http-header-expires.c in Sources */ = {isa = PBXBuildFile; fileRef = 46C5B1482182E16E00419E57 /* http-header-expires.c */; };
 		46C5B15F2182E16E00419E57 /* http-server-route.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46C5B1492182E16E00419E57 /* http-server-route.cpp */; };
@@ -31,11 +29,31 @@
 		46C5B1702182E16E00419E57 /* http-server.c in Sources */ = {isa = PBXBuildFile; fileRef = 46C5B15A2182E16E00419E57 /* http-server.c */; };
 		46C5B1712182E16E00419E57 /* http-upload.c in Sources */ = {isa = PBXBuildFile; fileRef = 46C5B15B2182E16E00419E57 /* http-upload.c */; };
 		46C5B1722182E16E00419E57 /* http-header-content-type.c in Sources */ = {isa = PBXBuildFile; fileRef = 46C5B15C2182E16E00419E57 /* http-header-content-type.c */; };
+		F38A9B81258E493D005A7AAA /* http-header-auth.c in Sources */ = {isa = PBXBuildFile; fileRef = F38A9B80258E493D005A7AAA /* http-header-auth.c */; };
+		F38A9B84258E4971005A7AAA /* http-websocket-parser.c in Sources */ = {isa = PBXBuildFile; fileRef = F38A9B83258E4971005A7AAA /* http-websocket-parser.c */; };
+		F38A9B88258E4985005A7AAA /* http-websocket-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F38A9B86258E4985005A7AAA /* http-websocket-internal.h */; };
+		F38A9B89258E4985005A7AAA /* http-websocket.c in Sources */ = {isa = PBXBuildFile; fileRef = F38A9B87258E4985005A7AAA /* http-websocket.c */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		045F1B5B23111D83006D8313 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045F1B5723111D83006D8313 /* libaio.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 46C5B17D2182E20900419E57;
+			remoteInfo = libaio;
+		};
+		045F1B5D23111D8A006D8313 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045F1B5723111D83006D8313 /* libaio.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 46C5B17C2182E20900419E57;
+			remoteInfo = libaio;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		4643D907244C497A00572339 /* http-transport-pool.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "http-transport-pool.c"; sourceTree = "<group>"; };
-		46A0D5042297930D0070E1F5 /* http-header-auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "http-header-auth.c"; sourceTree = "<group>"; };
+		045F1B5723111D83006D8313 /* libaio.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libaio.xcodeproj; path = ../libaio/libaio.xcodeproj; sourceTree = "<group>"; };
 		46C5B1332182E13000419E57 /* libhttp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libhttp.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C5B1472182E16E00419E57 /* http-client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "http-client.c"; sourceTree = "<group>"; };
 		46C5B1482182E16E00419E57 /* http-header-expires.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "http-header-expires.c"; sourceTree = "<group>"; };
@@ -60,6 +78,10 @@
 		46C5B15B2182E16E00419E57 /* http-upload.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "http-upload.c"; sourceTree = "<group>"; };
 		46C5B15C2182E16E00419E57 /* http-header-content-type.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "http-header-content-type.c"; sourceTree = "<group>"; };
 		46C5B1732182E17D00419E57 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		F38A9B80258E493D005A7AAA /* http-header-auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "http-header-auth.c"; sourceTree = "<group>"; };
+		F38A9B83258E4971005A7AAA /* http-websocket-parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "http-websocket-parser.c"; sourceTree = "<group>"; };
+		F38A9B86258E4985005A7AAA /* http-websocket-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "http-websocket-internal.h"; sourceTree = "<group>"; };
+		F38A9B87258E4985005A7AAA /* http-websocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "http-websocket.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +95,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045F1B5823111D83006D8313 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				045F1B5C23111D83006D8313 /* libaio.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		46C5B12A2182E13000419E57 = {
 			isa = PBXGroup;
 			children = (
+				045F1B5723111D83006D8313 /* libaio.xcodeproj */,
 				46C5B1732182E17D00419E57 /* include */,
-				46C5B1342182E13000419E57 /* Products */,
 				46C5B1462182E16E00419E57 /* source */,
+				46C5B1342182E13000419E57 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +124,10 @@
 		46C5B1462182E16E00419E57 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				F38A9B86258E4985005A7AAA /* http-websocket-internal.h */,
+				F38A9B87258E4985005A7AAA /* http-websocket.c */,
+				F38A9B83258E4971005A7AAA /* http-websocket-parser.c */,
+				F38A9B80258E493D005A7AAA /* http-header-auth.c */,
 				46C5B1472182E16E00419E57 /* http-client.c */,
 				46C5B1482182E16E00419E57 /* http-header-expires.c */,
 				46C5B1492182E16E00419E57 /* http-server-route.cpp */,
@@ -114,9 +149,7 @@
 				46C5B1592182E16E00419E57 /* http-server-sendfile.c */,
 				46C5B15A2182E16E00419E57 /* http-server.c */,
 				46C5B15B2182E16E00419E57 /* http-upload.c */,
-				46A0D5042297930D0070E1F5 /* http-header-auth.c */,
 				46C5B15C2182E16E00419E57 /* http-header-content-type.c */,
-				4643D907244C497A00572339 /* http-transport-pool.c */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -128,6 +161,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F38A9B88258E4985005A7AAA /* http-websocket-internal.h in Headers */,
 				46C5B1692182E16E00419E57 /* http-client-internal.h in Headers */,
 				46C5B1682182E16E00419E57 /* http-server-internal.h in Headers */,
 			);
@@ -147,6 +181,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				045F1B5E23111D8A006D8313 /* PBXTargetDependency */,
 			);
 			name = libhttp;
 			productName = libhttp;
@@ -173,17 +208,32 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = 46C5B12A2182E13000419E57;
 			productRefGroup = 46C5B1342182E13000419E57 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 045F1B5823111D83006D8313 /* Products */;
+					ProjectRef = 045F1B5723111D83006D8313 /* libaio.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				46C5B1322182E13000419E57 /* libhttp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		045F1B5C23111D83006D8313 /* libaio.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libaio.dylib;
+			remoteRef = 045F1B5B23111D83006D8313 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46C5B1302182E13000419E57 /* Sources */ = {
@@ -194,13 +244,15 @@
 				46C5B16E2182E16E00419E57 /* http-server-reply.c in Sources */,
 				46C5B15D2182E16E00419E57 /* http-client.c in Sources */,
 				46C5B15E2182E16E00419E57 /* http-header-expires.c in Sources */,
+				F38A9B84258E4971005A7AAA /* http-websocket-parser.c in Sources */,
 				46C5B16D2182E16E00419E57 /* http-header-authorization.c in Sources */,
 				46C5B1622182E16E00419E57 /* http-session.c in Sources */,
+				F38A9B89258E4985005A7AAA /* http-websocket.c in Sources */,
 				46C5B1632182E16E00419E57 /* http-parser.c in Sources */,
 				46C5B15F2182E16E00419E57 /* http-server-route.cpp in Sources */,
 				46C5B1722182E16E00419E57 /* http-header-content-type.c in Sources */,
 				46C5B1702182E16E00419E57 /* http-server.c in Sources */,
-				46A0D5052297930D0070E1F5 /* http-header-auth.c in Sources */,
+				F38A9B81258E493D005A7AAA /* http-header-auth.c in Sources */,
 				46C5B1642182E16E00419E57 /* http-cookie.c in Sources */,
 				46C5B1672182E16E00419E57 /* http-reason.c in Sources */,
 				46C5B16A2182E16E00419E57 /* http-client-connection-aio.c in Sources */,
@@ -209,13 +261,20 @@
 				46C5B1662182E16E00419E57 /* http-request.c in Sources */,
 				46C5B16F2182E16E00419E57 /* http-server-sendfile.c in Sources */,
 				46C5B1602182E16E00419E57 /* http-header-www-authenticate.c in Sources */,
-				4643D908244C497A00572339 /* http-transport-pool.c in Sources */,
 				46C5B1712182E16E00419E57 /* http-upload.c in Sources */,
 				46C5B1612182E16E00419E57 /* http-header-host.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		045F1B5E23111D8A006D8313 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libaio;
+			targetProxy = 045F1B5D23111D8A006D8313 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		46C5B1352182E13000419E57 /* Debug */ = {
@@ -262,7 +321,6 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
-					OS_MAC,
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -275,12 +333,6 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = (
-					.,
-					./include,
-					../include,
-					../libaio/include,
-				);
 			};
 			name = Debug;
 		};
@@ -323,7 +375,6 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = OS_MAC;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -334,12 +385,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = (
-					.,
-					./include,
-					../include,
-					../libaio/include,
-				);
 			};
 			name = Release;
 		};
@@ -348,10 +393,18 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				EXECUTABLE_PREFIX = "";
-				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					OS_MAC,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				USER_HEADER_SEARCH_PATHS = (
+					.,
+					"$(SRCROOT)/include",
+					"$(SRCROOT)/../include",
+					"$(SRCROOT)/../libaio/include",
+				);
 			};
 			name = Debug;
 		};
@@ -360,10 +413,15 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				EXECUTABLE_PREFIX = "";
-				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = OS_MAC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+				USER_HEADER_SEARCH_PATHS = (
+					.,
+					"$(SRCROOT)/include",
+					"$(SRCROOT)/../include",
+					"$(SRCROOT)/../libaio/include",
+				);
 			};
 			name = Release;
 		};

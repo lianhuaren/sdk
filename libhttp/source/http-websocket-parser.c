@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
-#include <errno.h>
 
 enum { WEBSOCKET_FRAME_MAXLENGTH = 64 * 1024 }; // 64KB
 
@@ -41,7 +40,7 @@ static int websocket_parser_alloc(struct websocket_parser_t* parser, size_t byte
 	{
 		ptr = realloc(parser->ptr, bytes);
 		if (!ptr)
-			return -ENOMEM;
+			return -12;
 		parser->ptr = (uint8_t*)ptr;
 		parser->capacity = bytes;
 	}

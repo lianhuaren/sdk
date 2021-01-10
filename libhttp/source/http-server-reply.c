@@ -18,7 +18,5 @@ int http_server_reply(http_session_t* session, int code, const void* data, size_
 	if (NULL == ptr)
 		return -ENOMEM;
 	memcpy(ptr, data, bytes);
-
-	http_server_set_status_code(session, code, NULL);
-	return http_server_send(session, ptr, bytes, http_server_onreply, ptr);
+	return http_server_send(session, code, ptr, bytes, http_server_onreply, ptr);
 }
